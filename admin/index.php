@@ -185,6 +185,8 @@
                                     include "cetak_laporan.php";
                                 }else if($_GET['halaman'] == "cetak_surat"){
                                     include "cetak_surat.php";
+                                }else if($_GET['halaman'] == "update_transaksi"){
+                                    include "update_transaksi.php";
                                 }
                             }else{
                                 include 'home.php';

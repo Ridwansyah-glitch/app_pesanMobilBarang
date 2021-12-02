@@ -69,7 +69,7 @@
               <td> Rp. <?= number_format($row['harga']); ?></td>
               <?php if ($row['status_transaksi'] == 3) : ?>
                 <td><span class="badge bg-primary">Sedang Proses Penjemputan Barang</span></td>
-              <?php else: ?>
+              <?php elseif($row['status_transaksi'] == 4): ?>
                 <td><span class="badge bg-success">Sudah Sampai</span></td>
               <?php endif; ?>
               <td></td>

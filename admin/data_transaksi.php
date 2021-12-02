@@ -53,7 +53,20 @@
                                 <a href="cetak_surat.php?id=<?= $data['id_transaksi'];?>">
                                 <button class="btn btn-info" type="submit">Cetak Surat Jalan</button>
                                 </a>
+                                <a href="index.php?halaman=update_transaksi&id=<?= $data['id_transaksi'];?>">
+                                <button class="btn btn-success" type="submit">Pengiriman Selesai</button>
+                                </a>
                             </td> 
+                        <?php } elseif($data['status_transaksi'] == 4) { ?>
+                            <td>Selesai</td>
+                            <td>
+                            <a href="index.php?halaman=detail_transaksi&id=<?= $data['id_transaksi'];?>">
+                                  <button class="btn btn-primary" type="submit">Detail</button>
+                                </a>&nbsp;
+                                <a href="cetak_surat.php?id=<?= $data['id_transaksi'];?>">
+                                <button class="btn btn-info" type="submit">Cetak Surat Jalan</button>
+                                </a>
+                            </td>
                         <?php } else{ ?>
                             <td>Belum Konfirmasi Pembayaran</td>
                             <td>
